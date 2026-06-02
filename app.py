@@ -1,9 +1,11 @@
+
 from flask import Flask
 
 app = Flask(__name__)
 
-@app.route()
+@app.route("/")
 def home():
-    return Hello from deployed app
+    return "Hello from deployed app"
 
-app.run(host=0.0.0.0, port=5000)
+app.run(host="0.0.0.0", port=5000)
+
